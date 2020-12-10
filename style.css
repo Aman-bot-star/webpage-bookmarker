@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: glacial-indifference;
+    src: url(./glacial-indifference/GlacialIndifference-Regular.otf);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: glacial-indifference;
+    background-color: #f0f0f0;
+}
+.container{
+    padding: 20px;
+    height: 100vh;
+    position: relative;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 40px 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0 0 40px 0;
+}
+
+h3{
+    font-size: 20px;
+}
+h3{
+    margin: 0 0 20px 0;
+}
+.item{
+    background-color: #fff;
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    flex-grow: 1;
+}
+.item > button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px 0 5px;
+}
+.fa-trash{
+    color: red;
+}
+.danger{
+    background-color: rgba(255, 0, 0, 0.315);
+}
+form > input{
+    width: 100%;
+    margin: 5px;
+    padding: 7px;
+    font-size: 15px;
+    border: none;
+}
+form > input::placeholder{
+    font-family: glacial-indiffernce;
+}
+form > button{
+    width: 100%;
+    margin: 20px 5px;
+    background-color: aquamarine;
+    border: none;
+    padding: 7px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+input:focus, button:focus{
+    outline: none;
+}
+#hidden{
+    opacity: 0;
+}
+.push-noti{
+    background-color: cadetblue;
+    color: #fff;
+    font-size: 15px;
+    opacity: 0;
+}
+.push-noti > p{
+    padding: 20px;
+}
+.active{
+    opacity: 1;
+}
